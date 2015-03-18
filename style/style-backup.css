@@ -2,6 +2,36 @@
 html, body { width:100%; height:100%; } /* just to be sure these are full screen*/
 canvas { display:block;background: #000; } /* To remove the scrollbars */
 
+#test{
+  text-align: center;
+}
+#tmp{
+  text-align: center;
+}
+
+li {
+    display: block;
+    height: 50px;
+}
+
+/* added to be able to fix the navbar to the (right) side  */
+.navbar-fixed-side-right {
+  right: 0;
+}
+.navbar-fixed-side {
+  position: fixed;
+  border-width: 0;
+  min-height: 5px;
+  min-width: 5px;
+  max-width: 200px;
+  margin-bottom: 0;
+  border: 0px solid transparent;
+}
+
+.navbar-fixed-side .navbar-nav > li {
+  float: none;
+}
+
 #canvas-wrap { position:relative } /* Make this a positioned parent */
 #canvas-menu     { position:absolute; top:30px; left:30px; }
 
@@ -29,14 +59,6 @@ canvas { display:block;background: #000; } /* To remove the scrollbars */
   background-color: #0f7da7;
 }
 
-.nav > li {
-  margin:0px 4px;
-}
-
 .slider-width{
   width:160px;
-}
-
-.label{
-  margin-left:12px;
 }
